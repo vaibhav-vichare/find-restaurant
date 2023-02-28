@@ -1,26 +1,51 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <header>Restaurant finder <div class="themeSwitch"><themeSwitch /></div></header>
+    <SidebarNavigation>list of restaurant</SidebarNavigation>
+     <router-view />
+   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import SidebarNavigation from "@/components/SidebarNavigation";
+import themeSwitch from "@/components/common/themeSwitch";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SidebarNavigation,
+    themeSwitch
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss" >
+@import "assets/styles/common.scss";
+:root {
+  --background-color-primary: #ebebeb;
+  --background-color-secondary: #fafafa;
+  --accent-color: #cacaca;
+  --text-primary-color: #222;
+  --element-size: 4rem;
 }
+
+:root.dark-theme {
+  --background-color-primary: #1e1e1e;
+  --background-color-secondary: #2d2d30;
+  --accent-color: #3f3f3f;
+  --text-primary-color: #ddd;
+}
+
+.themeSwitch {
+  float: right;
+}
+
+p, span, div {
+  color: var(--text-primary-color);
+}
+
+.container {
+  background-color: var(--background-color-primary);
+  text-align: left;
+}
+
 </style>

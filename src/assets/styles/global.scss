@@ -1,0 +1,35 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: "verdana";
+}
+
+h1 {
+  font-size: $font-size-40;
+  text-align: left;
+  font-weight: normal;
+}
+
+#app {
+  font-family: "verdana";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: $brand-color;
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  height: 100%;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  border-bottom:  solid 1px $border-color;
+  background-color: $background-dark;
+  padding: $building-unit-x5;
+  font-size: $font-size-40;
+  font-family: "verdana";
+  color: $text-light;
+}
