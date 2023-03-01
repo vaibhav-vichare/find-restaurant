@@ -36,7 +36,7 @@ export default {
 <template>
   <router-link :to="{ name: 'RestaurantDetails', params: {id: details.id }}" class="link" :class="{ active: isActive }" @click="updateStore" exact>
     <div class="title">{{details.name}}</div>
-    <div class="address"><img src="../assets/marker-icon.svg" width="20" height="20"> {{ details.location.address1 }}</div>
+    <div class="address"><img src="@/assets/marker-icon.svg" width="20" height="20"> {{ details.location.address1 }}</div>
   </router-link>
 </template>
 

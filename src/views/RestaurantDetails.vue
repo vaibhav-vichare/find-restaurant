@@ -4,8 +4,8 @@
     <div class="restaurantDetails">
       <div class="restaurantName">{{store.name}}</div>
       <div class="sections"><span class="title">Rating: </span>{{store.rating}}</div>
-      <div class="sections"><span><img src="../assets/marker-icon.svg"> </span>{{store.address}}</div>
-      <div class="sections"><span><img src="../assets/phone-icon.svg"> </span>{{store.phone}}</div>
+      <div class="sections"><span><img src="@/assets/marker-icon.svg"> </span>{{store.address}}</div>
+      <div class="sections"><span><img src="@/assets/phone-icon.svg"> </span>{{store.phone}}</div>
     </div>
     <div class="imgContainer"><img :src="store.photos" width="400"></div>
   </div>
